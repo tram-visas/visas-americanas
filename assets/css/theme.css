@@ -13611,27 +13611,36 @@ a.theme-link:hover {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
+
 .slides-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: calc( 300px + 3em);
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-.slides-open:checked + .slides-item {
+
+.slides-open:checked+.slides-item {
     position: static;
     opacity: 100;
 }
+
 .slides-item {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
+
 .slides-item img {
     display: block;
     height: auto;
     max-width: 100%;
 }
+
 .slides-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
@@ -13651,21 +13660,26 @@ a.theme-link:hover {
     width: 40px;
     z-index: 10;
 }
+
 .slides-control.prev {
     left: 2%;
 }
+
 .slides-control.next {
     right: 2%;
 }
+
 .slides-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
-#slides-1:checked ~ .control-1,
-#slides-2:checked ~ .control-2,
-#slides-3:checked ~ .control-3 {
+
+#slides-1:checked~.control-1,
+#slides-2:checked~.control-2,
+#slides-3:checked~.control-3 {
     display: block;
 }
+
 .slides-indicador {
     list-style: none;
     margin: 0;
@@ -13677,27 +13691,29 @@ a.theme-link:hover {
     text-align: center;
     z-index: 10;
 }
+
 .slides-indicador li {
     display: inline-block;
     margin: 0 5px;
 }
+
 .slides-circulo {
     color: #828282;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
+
 .slides-circulo:hover {
     color: #aaaaaa;
 }
-#slides-1:checked ~ .control-1 ~ .slides-indicador 
-     li:nth-child(1) .slide-circulo,
-#slides-2:checked ~ .control-2 ~ .slides-indicador 
-      li:nth-child(2) .slide-circulo,
-#slides-3:checked ~ .control-3 ~ .slides-indicador 
-      li:nth-child(3) .slide-circulo {
+
+#slides-1:checked~.control-1~.slides-indicador li:nth-child(1) .slide-circulo,
+#slides-2:checked~.control-2~.slides-indicador li:nth-child(2) .slide-circulo,
+#slides-3:checked~.control-3~.slides-indicador li:nth-child(3) .slide-circulo {
     color: #428bca;
 }
+
 #titulo {
     width: 100%;
     position: absolute;
@@ -13708,19 +13724,6 @@ a.theme-link:hover {
     color: rgba(255, 255, 255, 1);
     font-family: 'Open Sans', sans-serif;
     z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-         -1px 0px 2px rgba(255, 255, 255, 0);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+        -1px 0px 2px rgba(255, 255, 255, 0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
